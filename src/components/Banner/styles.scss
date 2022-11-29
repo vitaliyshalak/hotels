@@ -1,0 +1,17 @@
+@import 'src/assets/variables';
+
+.banner {
+  height: 200px;
+  background: $color-orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: $color-brown;
+  font-size: 160px;
+  width: 100%;
+
+  @media screen and #{$media-sm} {
+    font-size: 100px;
+  }
+}

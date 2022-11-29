@@ -1,0 +1,33 @@
+@import 'node_modules/swiper/swiper';
+@import 'src/assets/variables';
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  .swiper {
+    height: 100%;
+  }
+
+  &__nav {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    color: $color-white;
+
+    &:hover {
+      color: $color-orange;
+    }
+
+    &--backward {
+      left: 0;
+    }
+
+    &--forward {
+      right: 0;
+    }
+  }
+}

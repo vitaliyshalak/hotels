@@ -1,0 +1,88 @@
+@import 'src/assets/variables';
+
+.hotels {
+  padding: $gutter-xl 0;
+
+  @media screen and #{$media-md} {
+    padding: $gutter-xl $gutter-lg;
+  }
+
+  &__item {
+    background: $color-gray;
+    margin-bottom: $gutter-xl;
+    border-radius: 2px;
+    border: $border-orange;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-header {
+    display: flex;
+    padding: $gutter-sm;
+    border-bottom: $border-orange;
+
+    @media screen and #{$media-sm} {
+      display: block;
+
+      &::after {
+        display: block;
+        content: ' ';
+        clear: both;
+      }
+    }
+  }
+
+  &__item-info {
+    @media screen and #{$media-sm} {
+      float: left;
+    }
+  }
+
+  &__item-name {
+    color: $color-brown;
+    font-weight: bold;
+    font-size: $font-size-xl;
+    margin-bottom: $gutter-xs;
+  }
+
+  &__item-address {
+    color: $color-dark-orange;
+    margin-bottom: $gutter-xs;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-images {
+    margin-right: $gutter-sm;
+    width: 200px;
+    height: 150px;
+    overflow: hidden;
+
+    @media screen and #{$media-sm} {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: $gutter-sm;
+      height: 300px;
+    }
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      cursor: pointer;
+    }
+  }
+
+  &__item-rating {
+    margin-left: auto;
+
+    @media screen and #{$media-sm} {
+      float: right;
+    }
+  }
+}

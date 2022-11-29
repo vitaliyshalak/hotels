@@ -1,0 +1,45 @@
+@import 'src/assets/variables';
+
+.filter {
+  background: $color-gray;
+  position: absolute;
+  bottom: -25px;
+  border-radius: 2px;
+  padding: $gutter-xs $gutter-xl;
+  border: $border-orange;
+  display: flex;
+  user-select: none;
+
+  @media screen and #{$media-sm} {
+    padding: $gutter-xs;
+  }
+
+  &__option {
+    display: flex;
+    font-size: $font-size-xs;
+    font-weight: bold;
+    color: $color-brown;
+    align-items: center;
+    margin-left: $gutter-sm;
+
+    @media screen and #{$media-sm} {
+      margin-left: 0;
+    }
+  }
+
+  &__option-body {
+    display: flex;
+    align-items: center;
+  }
+
+  &__option-title {
+    margin-right: $gutter-xs;
+  }
+
+  &__option-value {
+    width: 20px;
+    font-weight: bold;
+    font-size: $font-size-md;
+    text-align: center;
+  }
+}

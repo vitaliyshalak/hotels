@@ -1,0 +1,15 @@
+@import 'src/assets/variables';
+
+.rating {
+  &__star {
+    color: $color-brown;
+  }
+
+  &__star--checked svg {
+    fill: $color-dark-orange;
+  }
+
+  &__star--pointer {
+    cursor: pointer;
+  }
+}

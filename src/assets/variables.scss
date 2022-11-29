@@ -1,0 +1,30 @@
+// colors
+$color-white: #ffffff;
+$color-blue: #669fb2;
+$color-gray: #dadfe1;
+$color-orange: #e8b877;
+$color-dark-orange: #dd802c;
+$color-brown: #3e2a20;
+
+// font size
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 18px;
+$font-size-xl: 30px;
+
+// gutter
+$gutter-xs: 8px;
+$gutter-sm: 12px;
+$gutter-md: 16px;
+$gutter-lg: 18px;
+$gutter-xl: 22px;
+$gutter-xxl: 32px;
+
+// borders
+$border-orange: 1px solid $color-orange;
+
+// responsive
+$media-xs: '(max-width: 414px)';
+$media-sm: '(max-width: 834px)';
+$media-md: '(max-width: 1024px)';

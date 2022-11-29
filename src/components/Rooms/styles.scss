@@ -1,0 +1,53 @@
+@import 'src/assets/variables';
+
+.rooms {
+  &__item {
+    padding: $gutter-xs $gutter-sm;
+    display: flex;
+    border-bottom: $border-orange;
+
+    @media screen and #{$media-xs} {
+      display: block;
+    }
+  }
+
+  &__item-info {
+    width: 200px;
+    margin-right: $gutter-sm;
+    flex-shrink: 0;
+
+    @media screen and #{$media-xs} {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: $gutter-sm;
+
+      &::after {
+        display: block;
+        content: ' ';
+        clear: both;
+      }
+    }
+  }
+
+  &__item-name {
+    font-weight: bold;
+    color: $color-brown;
+    margin-bottom: $gutter-xs;
+  }
+
+  &__item-occupancy {
+    font-size: $font-size-xs;
+
+    @media screen and #{$media-xs} {
+      float: left;
+      margin-right: $gutter-sm;
+    }
+  }
+
+  &__item-desc {
+    color: $color-brown;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}
